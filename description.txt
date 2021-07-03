@@ -1,1 +1,7 @@
-Elysium is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+Elysium is a new and upcoming content mod developed by Lettuce. This will feature a new class, new bosses, new knowledge tree GUI mechanic, and much more!
+
+Devs:
+
+Lettuce         -       Founder, Main Spriter, Coder
+Alueth          -       Disgrace, Concept Spriter
+EwithnoE        -       Bigger Disgrace, Concept

@@ -1,5 +1,8 @@
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria;
+using System;
+using Elysium.Items;
 
 namespace Elysium.Items
 {
@@ -7,8 +10,8 @@ namespace Elysium.Items
 	{
 		public override void SetStaticDefaults() 
 		{
-			// DisplayName.SetDefault("BasicSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("This is a basic modded sword.");
+			
+			Tooltip.SetDefault("Brother of the Starfury. Shoots homing star missiles at enemies.");
 		}
 
 		public override void SetDefaults() 
@@ -21,10 +24,12 @@ namespace Elysium.Items
 			item.useAnimation = 21;
 			item.useStyle = 1;
 			item.knockBack = 5;
-			item.value = Item.sellPrice(silver: 60);
+			item.value = Item.sellPrice(0, 60);
 			item.rare = 2;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = false;
+			item.shoot = ProjectileID.SporeGas3;
+			item.shootSpeed = 5f;
 		}
 
 		public override void AddRecipes() 
