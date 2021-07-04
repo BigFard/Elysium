@@ -25,10 +25,10 @@
     <Folder Include="Items\Materials\Parts\" />
     <Folder Include="Items\Tools\" />
     <Folder Include="Items\Weapons\Mage\" />
-    <Folder Include="Items\Weapons\Summoner\" />
     <Folder Include="Items\Weapons\Berserker\" />
     <Folder Include="Items\Weapons\Ranger\" />
     <Folder Include="Dusts\" />
+    <Folder Include="Items\Weapons\Summoner\" />
     <Folder Include="Tiles\" />
     <Folder Include="NPC\" />
     <Folder Include="Projectiles\Mage\" />

@@ -6,7 +6,7 @@ using Elysium.Items;
 
 namespace Elysium.Items
 {
-	internal class Starlight : ModItem
+	public class Starlight : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
