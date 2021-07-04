@@ -3,17 +3,14 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-
 namespace Elysium.Projectiles
 {
-	
 	public class StarlightProj : ModProjectile
 	{
 		public override void SetStaticDefaults()
 		{
 			Main.projFrames[projectile.type] = 4;
 		}
-		
 		public override void SetDefaults()
 		{
 			projectile.width = 30;
@@ -24,13 +21,9 @@ namespace Elysium.Projectiles
 			projectile.tileCollide = false;
 			projectile.alpha = 255;
 			projectile.penetrate = -1;
-	
 		}
-
 		public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
 		{
-			//3a: target.immune[projectile.owner] = 20;
-			//3b: target.immune[projectile.owner] = 5;
 		}
 
 		public override Color? GetAlpha(Color lightColor)
@@ -44,7 +37,6 @@ namespace Elysium.Projectiles
 			projectile.ai[0] += 1f;
 			if (projectile.ai[0] > 50f)
 			{
-				// Fade out
 				projectile.alpha += 25;
 				if (projectile.alpha > 255)
 				{
@@ -53,16 +45,14 @@ namespace Elysium.Projectiles
 			}
 			else
 			{
-				// Fade in
 				projectile.alpha -= 25;
 				if (projectile.alpha < 100)
 				{
 					projectile.alpha = 100;
 				}
 			}
-			// Slow down
 			projectile.velocity *= 0.98f;
-			// Loop through the 4 animation frames, spending 5 ticks on each.
+		
 			if (++projectile.frameCounter >= 5)
 			{
 				projectile.frameCounter = 0;
@@ -71,7 +61,6 @@ namespace Elysium.Projectiles
 					projectile.frame = 0;
 				}
 			}
-		
 			if (projectile.ai[0] >= 120f)
 			{
 				projectile.Kill();
@@ -82,15 +71,12 @@ namespace Elysium.Projectiles
 			{
 				projectile.velocity.Y = 30f;
 			}
-			// Since our sprite has an orientation, we need to adjust rotation to compensate for the draw flipping.
 			if (projectile.spriteDirection == -1)
 			{
 				projectile.rotation += MathHelper.Pi;
 			}
 
 		}
-
-		// Some advanced drawing because the texture image isn't centered or symetrical.
 		public override bool PreDraw(SpriteBatch spriteBatch, Color lightColor)
 		{
 			SpriteEffects spriteEffects = SpriteEffects.None;

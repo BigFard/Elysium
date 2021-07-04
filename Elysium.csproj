@@ -14,6 +14,28 @@
     <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Buffs\Minions\" />
+    <Folder Include="Buffs\Effects\" />
+    <Folder Include="Buffs\Pets\" />
+    <Folder Include="Items\Ammo\" />
+    <Folder Include="Items\Armor\" />
+    <Folder Include="Items\Bags\" />
+    <Folder Include="Items\Accessories\" />
+    <Folder Include="Items\Materials\Bars\" />
+    <Folder Include="Items\Materials\Parts\" />
+    <Folder Include="Items\Tools\" />
+    <Folder Include="Items\Weapons\Mage\" />
+    <Folder Include="Items\Weapons\Summoner\" />
+    <Folder Include="Items\Weapons\Berserker\" />
+    <Folder Include="Items\Weapons\Ranger\" />
+    <Folder Include="Dusts\" />
+    <Folder Include="Tiles\" />
+    <Folder Include="NPC\" />
+    <Folder Include="Projectiles\Mage\" />
+    <Folder Include="Projectiles\Berserker\" />
+    <Folder Include="Projectiles\Enemies\" />
+    <Folder Include="Projectiles\Summoner\" />
+    <Folder Include="Projectiles\Ranger\" />
     <Folder Include="Sounds\" />
   </ItemGroup>
 </Project>

@@ -22,10 +22,10 @@ namespace Elysium.Items
 			item.height = 32;
 			item.useTime = 21;
 			item.useAnimation = 21;
-			item.useStyle = 1;
+			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 2;
 			item.value = Item.sellPrice(0, 60);
-			item.rare = 2;
+			item.rare = ItemRarityID.Blue;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = false;
 			item.shoot = ModContent.ProjectileType<Projectiles.StarlightProj>();
