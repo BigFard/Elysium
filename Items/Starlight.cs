@@ -6,7 +6,7 @@ using Elysium.Items;
 
 namespace Elysium.Items
 {
-	public class Starlight : ModItem
+	internal class Starlight : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
@@ -16,19 +16,19 @@ namespace Elysium.Items
 
 		public override void SetDefaults() 
 		{
-			item.damage = 10;
+			item.damage = 8;
 			item.melee = true;
 			item.width = 32;
 			item.height = 32;
 			item.useTime = 21;
 			item.useAnimation = 21;
 			item.useStyle = 1;
-			item.knockBack = 5;
+			item.knockBack = 2;
 			item.value = Item.sellPrice(0, 60);
 			item.rare = 2;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = false;
-			item.shoot = ProjectileID.SporeGas3;
+			item.shoot = ModContent.ProjectileType<Projectiles.StarlightProj>();
 			item.shootSpeed = 5f;
 		}
 
