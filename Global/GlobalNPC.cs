@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
+using static Terraria.ModLoader.ModContent;
+using Elysium.Items.Weapons.Melee;
 
 namespace Elysium.Global
 {
@@ -15,7 +17,7 @@ namespace Elysium.Global
 			{
 				if (Main.rand.NextFloat() < .45f)
 				{
-					Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ModContent.ItemType<>(), 1);
+					Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ModContent.ItemType<IceRupture>(), 1);
 				}
 			}
 			
