@@ -4,7 +4,7 @@ using Terraria;
 using System;
 using Elysium.Items;
 
-namespace Elysium.Items
+namespace Elysium.Items.Weapons.Melee
 {
 	public class IceRupture : ModItem
 	{
@@ -31,7 +31,8 @@ namespace Elysium.Items
 		}
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit)
 		{
-			target.AddBuff(BuffID.Frostburn, 5);
+			target.AddBuff(BuffID.Frostburn, 60);
 		}
+
 	}
 }

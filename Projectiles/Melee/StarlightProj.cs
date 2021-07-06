@@ -3,7 +3,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-namespace Elysium.Projectiles
+
+namespace Elysium.Projectiles.Melee
 {
 	public class StarlightProj : ModProjectile
 	{

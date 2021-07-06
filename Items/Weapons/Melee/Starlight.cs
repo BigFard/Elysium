@@ -4,7 +4,7 @@ using Terraria;
 using System;
 using Elysium.Items;
 
-namespace Elysium.Items
+namespace Elysium.Items.Weapons.Melee
 {
 	public class Starlight : ModItem
 	{
@@ -28,7 +28,7 @@ namespace Elysium.Items
 			item.rare = ItemRarityID.Blue;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = false;
-			item.shoot = ModContent.ProjectileType<Projectiles.StarlightProj>();
+			item.shoot = ModContent.ProjectileType<Projectiles.Melee.StarlightProj>();
 			item.shootSpeed = 5f;
 		}
 
