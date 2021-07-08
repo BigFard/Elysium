@@ -31,5 +31,16 @@ namespace Elysium.Items.Accessories
             /*Don't know how to properly add a new projectile velocity onto the already existing projectile velocity. 
              Saving for later, or for anyone that wants to tackle it for me.*/
         }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.AntlionMandible, 5);
+            recipe.AddIngredient(ItemID.Cactus, 10);
+            recipe.AddIngredient(ItemID.Leather, 1);
+            recipe.AddTile(TileID.WorkBenches);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
     }
 }
