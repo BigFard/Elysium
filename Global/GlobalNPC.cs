@@ -13,14 +13,31 @@ namespace Elysium.Global
 	{
 		public override void NPCLoot(NPC npc)
 		{
-			if (npc.type == NPCID.IceBat)
+            #region Ice Rupture
+            if (npc.type == NPCID.IceBat)
 			{
 				if (Main.rand.NextFloat() < .45f)
 				{
 					Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ModContent.ItemType<IceRupture>(), 1);
 				}
 			}
-			
-		}
-	}
+
+            if (npc.type == NPCID.IceSlime)
+            {
+                if (Main.rand.NextFloat() < .45f)
+                {
+                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ModContent.ItemType<IceRupture>(), 1);
+                }
+            }
+
+            if (npc.type == NPCID.SpikedIceSlime)
+            {
+                if (Main.rand.NextFloat() < .45f)
+                {
+                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ModContent.ItemType<IceRupture>(), 1);
+                }
+            }
+            #endregion
+        }
+    }
 }
